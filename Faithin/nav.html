@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Sticky Sidebar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #010316;
+}
+
+html {
+  
+  height: 200vh;
+}
+
+
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8rem;
+  max-width: 80%;
+  margin-left: 90px;
+}
+
+
+/* Styling grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 3rem;
+}
+
+.grid div {
+  color: #eee;
+  height: 10rem;
+  padding-top: 30px;
+  /* center the text */
+  /* background-color: red; */
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.article {
+  /* background: #eee; */
+  flex-grow: 999;
+  flex-basis: 0;
+}
+
+.sticky {
+  color: white;
+  height: 100px;
+  width: 100px;
+  flex-grow: 1;
+  flex-basis: 400px;
+  position: sticky;
+  top: 2rem;
+  /* center the text */
+  
+  
+  justify-content: center;
+}
+.sticky h1{
+  font-size: 40px;
+}
+</style>
+<body>
+  
+  <div class="main">
+    <!-- <div class="row">
+      <div class="col-md-7">
+        
+      </div>
+    </div> -->
+    <aside class="sticky ml-5">
+      <div class="container">
+              <h4>Product Design</h4>
+              <h1 style="text-align: justify;">Craft delightful user experiences for your digital products.</h1>
+      </div>
+    </aside>
+
+    <section class="article">
+      <div class="container">
+            <div class="grid">
+              <div class="">
+                <h3>Icon</h3>
+                <h4>UI/UX Design</h4>
+                <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, odio voluptate
+                  harum, a nisi, facilis esse impedit corrupti illo quas cupiditate quidem!</p>
+              </div>
+              <div class="box">
+                <h3>Icon</h3>
+                <h4>UI/UX Design</h4>
+                <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, odio voluptate
+                  harum, a nisi, facilis esse impedit corrupti illo quas cupiditate quidem!</p>
+              </div>
+              <div class="box">
+                <h3>Icon</h3>
+                <h4>UI/UX Design</h4>
+                <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, odio voluptate
+                  harum, a nisi, facilis esse impedit corrupti illo quas cupiditate quidem!</p>
+              </div>
+              <div class="box">
+                <h3>Icon</h3>
+                <h4>UI/UX Design</h4>
+                <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, odio voluptate
+                  harum, a nisi, facilis esse impedit corrupti illo quas cupiditate quidem!</p>
+              </div>
+              <div class="box">
+                <h3>Icon</h3>
+                <h4>UI/UX Design</h4>
+                <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, odio voluptate
+                  harum, a nisi, facilis esse impedit corrupti illo quas cupiditate quidem!</p>
+              </div>
+              <div class="box">
+                <h3>Icon</h3>
+                <h4>UI/UX Design</h4>
+                <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, odio voluptate
+                  harum, a nisi, facilis esse impedit corrupti illo quas cupiditate quidem!</p>
+              </div>
+            </div>
+      </div>
+    </section>
+    
+  </div>
+</body>
+
+</html>

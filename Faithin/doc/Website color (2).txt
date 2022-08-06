@@ -1,0 +1,5 @@
+Website  Color Usages
+
+BDark- #010316
+ Light- #F1F2F2
+ Blue- #27AAE1
